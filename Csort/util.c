@@ -1,5 +1,8 @@
 #include "util.h"
+
 #include "mergesort.h"
+#include "radixsort.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -61,7 +64,8 @@ double time_sort(int n) {
     
     // Sort the array
     clock_t start = clock();
-    merge_sort(arr, size);
+    //merge_sort(arr, size);
+    radix_sort(arr, size);
     clock_t end = clock();
     
     for (int i = 0; i < size - 1; i++) {
