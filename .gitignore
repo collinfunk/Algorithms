@@ -1,4 +1,7 @@
+/.vscode/
+/.idea/
 
+*.class
 *.o
 *.txt
 main
